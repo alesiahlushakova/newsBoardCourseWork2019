@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.16">
+    <root id="1">
+      <ServerVersion>12.1</ServerVersion>
+      <StartupTime>1582089355</StartupTime>
+    </root>
+    <database id="2" parent="1" name="album_console">
+      <ObjectId>17466</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="3" parent="1" name="crimes">
+      <ObjectId>17789</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="gym">
+      <ObjectId>16393</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="news">
+      <ObjectId>50557</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>15978020</IntrospectionStateNumber>
+    </database>
+    <database id="6" parent="1" name="postgres">
+      <ObjectId>13318</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>15978018</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Relations>sequence|table|16485|16487|1
+sequence|table|16401|16403|1
+sequence|table|16419|16421|1
+sequence|table|16445|16447|1
+</Relations>
+    </database>
+    <database id="7" parent="1" name="task2">
+      <ObjectId>17790</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="8" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="15" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="16" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="17" parent="5" name="information_schema">
+      <ObjectId>13018</ObjectId>
+      <StateNumber>282</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="18" parent="5" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>275</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="19" parent="5" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>276</StateNumber>
+      <Owner>postgres</Owner>
+      <Current>1</Current>
+    </schema>
+    <access-method id="20" parent="5" name="heap">
+      <ObjectId>2</ObjectId>
+      <Comment>heap table access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.heap_tableam_handler</Handler>
+      <HandlerId>3</HandlerId>
+    </access-method>
+    <access-method id="21" parent="5" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="5" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="5" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="5" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="25" parent="5" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="26" parent="5" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="27" parent="5" name="plpgsql">
+      <ObjectId>13304</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>437</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <schema id="28" parent="6" name="information_schema">
+      <ObjectId>13018</ObjectId>
+      <StateNumber>282</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="29" parent="6" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>275</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="30" parent="6" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>276</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>15978019</IntrospectionStateNumber>
+      <Current>1</Current>
+    </schema>
+    <access-method id="31" parent="6" name="heap">
+      <ObjectId>2</ObjectId>
+      <Comment>heap table access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.heap_tableam_handler</Handler>
+      <HandlerId>3</HandlerId>
+    </access-method>
+    <access-method id="32" parent="6" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="33" parent="6" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="34" parent="6" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="35" parent="6" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="36" parent="6" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="37" parent="6" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="38" parent="6" name="adminpack">
+      <ObjectId>16384</ObjectId>
+      <Comment>administrative functions for PostgreSQL</Comment>
+      <StateNumber>487</StateNumber>
+      <Version>2.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <extension id="39" parent="6" name="plpgsql">
+      <ObjectId>13304</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>437</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="40" parent="30" name="exercises_exerciseid_seq">
+      <ObjectId>16419</ObjectId>
+      <StateNumber>502</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="41" parent="30" name="program_programid_seq">
+      <ObjectId>16485</ObjectId>
+      <StateNumber>524</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="42" parent="30" name="subscription_subscriptionid_seq">
+      <ObjectId>16445</ObjectId>
+      <StateNumber>515</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="43" parent="30" name="users_userid_seq">
+      <ObjectId>16401</ObjectId>
+      <StateNumber>495</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <object-type id="44" parent="30" name="role_t">
+      <ObjectId>16395</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>494</StateNumber>
+      <SubKind>enum</SubKind>
+      <Labels>ADMIN
+COACH
+CLIENT</Labels>
+      <SubCategory>enum</SubCategory>
+    </object-type>
+    <object-type id="45" parent="30" name="fitness_level_t">
+      <ObjectId>16413</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>501</StateNumber>
+      <SubKind>enum</SubKind>
+      <Labels>STARTER
+CASUAL
+EXPERT</Labels>
+      <SubCategory>enum</SubCategory>
+    </object-type>
+    <object-type id="46" parent="30" name="trial_t">
+      <ObjectId>16438</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>512</StateNumber>
+      <SubKind>enum</SubKind>
+      <Labels>WEEK
+MONTH
+YEAR</Labels>
+      <SubCategory>enum</SubCategory>
+    </object-type>
+    <object-type id="47" parent="30" name="sub_type_t">
+      <ObjectId>16464</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>519</StateNumber>
+      <SubKind>enum</SubKind>
+      <Labels>WEEK+COACH
+WEEK
+MONTH+COACH
+MONTH
+YEAR
+YEAR+COACH</Labels>
+      <SubCategory>enum</SubCategory>
+    </object-type>
+    <table id="48" parent="30" name="complex">
+      <ObjectId>16506</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>528</StateNumber>
+    </table>
+    <table id="49" parent="30" name="exercises">
+      <ObjectId>16421</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>528</StateNumber>
+    </table>
+    <table id="50" parent="30" name="pricing">
+      <ObjectId>16477</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>520</StateNumber>
+    </table>
+    <table id="51" parent="30" name="program">
+      <ObjectId>16487</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>524</StateNumber>
+    </table>
+    <table id="52" parent="30" name="subscription">
+      <ObjectId>16447</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>515</StateNumber>
+    </table>
+    <table id="53" parent="30" name="users">
+      <ObjectId>16403</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>515</StateNumber>
+    </table>
+    <column id="54" parent="48" name="programid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>528</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="55" parent="48" name="exerciseid">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>528</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="56" parent="48" name="days">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>528</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="57" parent="48" name="weightloss">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>528</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="58" parent="48" name="sets">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>528</StateNumber>
+      <DefaultExpression>0</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="59" parent="48" name="repeats">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>528</StateNumber>
+      <DefaultExpression>1</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="60" parent="48" name="complex_pkey">
+      <ObjectId>16511</ObjectId>
+      <StateNumber>528</StateNumber>
+      <ColNames>programid
+exerciseid
+days</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="61" parent="48" name="complex_pkey">
+      <ObjectId>16512</ObjectId>
+      <StateNumber>528</StateNumber>
+      <ColNames>programid
+exerciseid
+days</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>complex_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="62" parent="48" name="complex_program_fk">
+      <ObjectId>16518</ObjectId>
+      <StateNumber>528</StateNumber>
+      <ColNames>programid</ColNames>
+      <RefTableId>16487</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>program</RefTableName>
+      <RefKeyName>program_pkey</RefKeyName>
+      <RefColNames>programid</RefColNames>
+    </foreign-key>
+    <foreign-key id="63" parent="48" name="complex_exercise_fk">
+      <ObjectId>16513</ObjectId>
+      <StateNumber>528</StateNumber>
+      <ColNames>exerciseid</ColNames>
+      <RefTableId>16421</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>exercises</RefTableName>
+      <RefKeyName>exercises_pkey</RefKeyName>
+      <RefColNames>exerciseid</RefColNames>
+    </foreign-key>
+    <column id="64" parent="49" name="exerciseid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>502</StateNumber>
+      <DefaultExpression>nextval(&apos;exercises_exerciseid_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="65" parent="49" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>502</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="66" parent="49" name="restrictions">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>502</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="67" parent="49" name="calorieslost">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>502</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="68" parent="49" name="fitnesslevel">
+      <Position>5</Position>
+      <DataType>fitness_level_t|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>502</StateNumber>
+      <TypeId>16413</TypeId>
+    </column>
+    <column id="69" parent="49" name="description">
+      <Position>6</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>502</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="70" parent="49" name="exercises_pkey">
+      <ObjectId>16428</ObjectId>
+      <StateNumber>502</StateNumber>
+      <ColNames>exerciseid</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="71" parent="49" name="exercises_pkey">
+      <ObjectId>16429</ObjectId>
+      <StateNumber>502</StateNumber>
+      <ColNames>exerciseid</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>exercises_pkey</UnderlyingIndexName>
+    </key>
+    <column id="72" parent="50" name="subscriptiontype">
+      <Position>1</Position>
+      <DataType>sub_type_t|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>520</StateNumber>
+      <TypeId>16464</TypeId>
+    </column>
+    <column id="73" parent="50" name="price">
+      <Position>2</Position>
+      <DataType>numeric|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>520</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <index id="74" parent="50" name="pricing_pkey">
+      <ObjectId>16483</ObjectId>
+      <StateNumber>520</StateNumber>
+      <ColNames>subscriptiontype</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="75" parent="50" name="pricing_pkey">
+      <ObjectId>16484</ObjectId>
+      <StateNumber>520</StateNumber>
+      <ColNames>subscriptiontype</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pricing_pkey</UnderlyingIndexName>
+    </key>
+    <column id="76" parent="51" name="programid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>524</StateNumber>
+      <DefaultExpression>nextval(&apos;program_programid_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="77" parent="51" name="coachid">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>524</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="78" parent="51" name="clientid">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>524</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="79" parent="51" name="startdate">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>524</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="80" parent="51" name="enddate">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>524</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="81" parent="51" name="diet">
+      <Position>6</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>524</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="82" parent="51" name="program_pkey">
+      <ObjectId>16494</ObjectId>
+      <StateNumber>524</StateNumber>
+      <ColNames>programid</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="83" parent="51" name="program_pkey">
+      <ObjectId>16495</ObjectId>
+      <StateNumber>524</StateNumber>
+      <ColNames>programid</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>program_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="84" parent="51" name="coach_fk">
+      <ObjectId>16501</ObjectId>
+      <StateNumber>524</StateNumber>
+      <ColNames>coachid</ColNames>
+      <RefTableId>16403</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>userid</RefColNames>
+    </foreign-key>
+    <foreign-key id="85" parent="51" name="client_fk">
+      <ObjectId>16496</ObjectId>
+      <StateNumber>524</StateNumber>
+      <ColNames>clientid</ColNames>
+      <RefTableId>16403</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>userid</RefColNames>
+    </foreign-key>
+    <column id="86" parent="52" name="subscriptionid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>515</StateNumber>
+      <DefaultExpression>nextval(&apos;subscription_subscriptionid_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="87" parent="52" name="clientid">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>515</StateNumber>
+      <DefaultExpression>0</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="88" parent="52" name="purchasedate">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>515</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="89" parent="52" name="expirationdate">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>515</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="90" parent="52" name="trial">
+      <Position>5</Position>
+      <DataType>trial_t|0s</DataType>
+      <StateNumber>515</StateNumber>
+      <TypeId>16438</TypeId>
+    </column>
+    <column id="91" parent="52" name="price">
+      <Position>6</Position>
+      <DataType>numeric|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>515</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="92" parent="52" name="ibm">
+      <Position>7</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>515</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="93" parent="52" name="iscoachneeded">
+      <Position>8</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>515</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="94" parent="52" name="ispayed">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>515</StateNumber>
+      <DefaultExpression>0</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="95" parent="52" name="feedback">
+      <Position>10</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>515</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="96" parent="52" name="subscription_pkey">
+      <ObjectId>16456</ObjectId>
+      <StateNumber>515</StateNumber>
+      <ColNames>subscriptionid</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="97" parent="52" name="subscription_pkey">
+      <ObjectId>16457</ObjectId>
+      <StateNumber>515</StateNumber>
+      <ColNames>subscriptionid</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>subscription_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="98" parent="52" name="clientid_fk">
+      <ObjectId>16458</ObjectId>
+      <StateNumber>515</StateNumber>
+      <ColNames>clientid</ColNames>
+      <RefTableId>16403</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>userid</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="99" parent="53" name="userid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>495</StateNumber>
+      <DefaultExpression>nextval(&apos;users_userid_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="100" parent="53" name="login">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>495</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="101" parent="53" name="password">
+      <Position>3</Position>
+      <DataType>char(64)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>495</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="102" parent="53" name="role">
+      <Position>4</Position>
+      <DataType>role_t|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>495</StateNumber>
+      <TypeId>16395</TypeId>
+    </column>
+    <column id="103" parent="53" name="firstname">
+      <Position>5</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>495</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="104" parent="53" name="lastname">
+      <Position>6</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>495</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="105" parent="53" name="telephone">
+      <Position>7</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>495</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="106" parent="53" name="photo">
+      <Position>8</Position>
+      <DataType>bytea|0s</DataType>
+      <StateNumber>495</StateNumber>
+      <TypeId>17</TypeId>
+    </column>
+    <index id="107" parent="53" name="users_pkey">
+      <ObjectId>16410</ObjectId>
+      <StateNumber>495</StateNumber>
+      <ColNames>userid</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="108" parent="53" name="users_pkey">
+      <ObjectId>16411</ObjectId>
+      <StateNumber>495</StateNumber>
+      <ColNames>userid</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

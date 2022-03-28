@@ -1,0 +1,4 @@
+
+squid:S1192"xDefine a constant instead of duplicating this literal "SELECT id, title, short_text, full_text, creation_date," 3 times.(üŞù
+ssquid:S1488f"\Immediately return this expression instead of assigning it to the temporary variable "news".(åÕã³
+`squid:S3358Q"DExtract this nested ternary operation into an independent statement.(áïŞ¼ûÿÿÿÿ
